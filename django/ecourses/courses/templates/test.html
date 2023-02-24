@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Courses</title>
+</head>
+<body>
+
+<h1>Courses</h1>
+  
+<ul>
+  {% for x in Couser %}
+    <li><a href="detail/{{ x.id }}">{{ x.subject}}</a></li>
+  {% endfor %}
+</ul>
+
+</body>
+</html>  

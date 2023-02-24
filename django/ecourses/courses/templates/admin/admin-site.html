@@ -1,0 +1,37 @@
+{% extends 'admin/base_site.html'%}
+{% block header %}
+<div id="header">
+    <div id="branding">
+    
+<h1 id="site-name"><a href="/admin/">Hệ Thống Quản Lý Khóa Học</a></h1>
+
+    </div>
+    
+    
+    <div id="user-tools">
+        
+            Xin chào,
+            <strong>DuongHoangKhanh</strong>.
+        
+        
+            
+                <a href="/">View site</a> /
+            
+            
+                
+                
+            
+            
+            <a href="/admin/password_change/">Change password</a> /
+            
+            <form id="logout-form" method="post" action="/admin/logout/">
+                <input type="hidden" name="csrfmiddlewaretoken" value="2mH2LLKRtpsU9CbiXGwAa6kkUWWQHFmZ9anFgthVEjUvOcnafmuhSl6w6AajkteU">
+                <button type="submit">Log out</button>
+            </form>
+        
+    </div>
+    
+    
+    
+</div>
+{% endblock %}

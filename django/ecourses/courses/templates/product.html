@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <title>Trang chủ web bán hàng</title>
+  <style>
+    /* CSS cho header */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* CSS cho danh sách sản phẩm */
+    .product-list {
+      display: flex;
+      width: 100%;
+      flex-flow: row wrap;
+    }
+
+    /* CSS cho từng sản phẩm */
+    .product {
+      background-color: #f2f2f2;
+      border: 1px solid black;
+      text-align: center;
+      padding: 10px;
+      width: 300px;
+      height: 300px;
+      margin-top: 50px;
+      
+    }
+
+    /* CSS cho hình ảnh sản phẩm */
+    .product-image {
+      width: 100%;
+    }
+
+    /* CSS cho giá sản phẩm */
+    .product-price {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+  <header>
+
+    <h1>Web bán hàng</h1>
+  </header>
+  <section class="product-list">
+    <!-- Sản phẩm 1 -->
+    {% for x in proDuct %}
+    <div class="product">
+      <img class="product-image" src="product1.jpg" alt={{x.subject}}>
+      <h2>{{x.subject}}</h2>
+      <p class="product-price">100.000đ</p>
+      <p><a href="#">Xem chi tiết</a></p>
+      <a>{{x.description}}</a>
+    </div>
+  
+    {% endfor %}
+  </section>
+
+  </body>
+
+</html
